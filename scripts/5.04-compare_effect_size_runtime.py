@@ -30,7 +30,7 @@ def run_parallel(logger):
     )
     logger.info("Finished loading distance matrix!")
 
-    bdh = evident.BetaDiversityHandler(dm, md)
+    bdh = evident.MultivariateDataHandler(dm, md)
 
     logger.info("Calculating effect sizes...")
     start_time = time.time()
@@ -61,7 +61,7 @@ def run_serial(logger):
     )
     logger.info("Finished loading distance matrix!")
 
-    bdh = evident.BetaDiversityHandler(dm, md)
+    bdh = evident.MultivariateDataHandler(dm, md)
 
     logger.info("Calculating effect sizes...")
     start_time = time.time()

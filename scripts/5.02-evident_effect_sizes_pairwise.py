@@ -3,7 +3,7 @@
 #SBATCH --output=/home/grahman/projects/evident-analyses/log/%x.log
 #SBATCH --partition=short
 #SBATCH --nodes=1
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=8
 #SBATCH --mem-per-cpu=16G
 #SBATCH --time=6:00:00
 
@@ -29,16 +29,15 @@ def main():
     )
     logger.info("Finished loading distance matrix!")
 
-    bdh = evident.BetaDiversityHandler(dm, md)
+    udh = evident.MultivariateDataHandler(dm, md, max_levels_per_category=5)
 
     logger.info("Calculating pairwise effect sizes...")
     res = pairwise_effect_size_by_category(
-        bdh,
-        md.columns,
-        n_jobs=4,
+        udh,
+        udh.metadata.columns,
+        n_jobs=8,
         parallel_args={
             "backend": "multiprocessing",
-            "batch_size": 1,
             "verbose": 100
         }
     )

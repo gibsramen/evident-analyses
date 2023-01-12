@@ -1,9 +1,9 @@
 #!/home/grahman/miniconda3/envs/evident-analyses/bin/python
 #SBATCH --chdir=/home/grahman/projects/evident-analyses
-#SBATCH --output=/home/grahman/projects/evident-analyses/log/%x.log
+#SBATCH --output=/home/grahman/projects/evident-analyses/log/supplemental/%x.log
 #SBATCH --partition=short
 #SBATCH --nodes=1
-#SBATCH --cpus-per-task=8
+#SBATCH --cpus-per-task=3
 #SBATCH --mem-per-cpu=16G
 #SBATCH --time=6:00:00
 
@@ -32,24 +32,24 @@ def main():
     udh = evident.MultivariateDataHandler(dm, md, max_levels_per_category=5)
 
     alpha = [0.01, 0.05, 0.10]
-    total_observations = np.arange(20, 1501, step=40)
+    total_observations = np.arange(20, 1501, step=80)
 
     parallel_args = {
         "backend": "multiprocessing",
         "verbose": 100,
         "batch_size": 1
     }
-    results = Parallel(n_jobs=8, **parallel_args)(
-        delayed(udh.power_analysis)(
-            col,
+    results = Parallel(n_jobs=3, **parallel_args)(
+        delayed(udh.power_analysis_permanova)(
+            column="last_travel",
             alpha=alpha,
             total_observations=total_observations
         )
-        for col in udh.metadata.columns
+        for alpha in alpha
     )
     res_df = pd.concat([x.to_dataframe() for x in results])
     logger.info(f"\n{res_df.head()}")
-    res_df.to_csv("results/power_analysis.tsv", sep="\t", index=False)
+    res_df.to_csv("results/supplemental/perm_power_analysis.tsv", sep="\t", index=False)
 
 
 if __name__ == "__main__":

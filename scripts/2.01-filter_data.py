@@ -87,6 +87,8 @@ def main():
     orig_md.index = "S" + orig_md.index
     cols_to_remove = [
         "roommates",
+        "plating",
+        "state",
         "age_cat",
         "bmi_corrected",
         "height_cm",
@@ -108,6 +110,12 @@ def main():
     new_md = pd.read_table(new_md_file, sep="\t", index_col=0,
                            na_values=na_vals)
     new_md.index = "S" + new_md.index
+
+    ptsd_map = {
+        "mental_illness_type_ptsd_post_traumatic_stress_disorder":
+        "mental_illness_type_ptsd_posttraumatic_stress_disorder"
+    }
+    new_md = new_md.rename(columns=ptsd_map)
 
     cols_in_common = set(orig_md.columns).intersection(new_md.columns)
     new_md = new_md[cols_in_common]
