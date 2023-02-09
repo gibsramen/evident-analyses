@@ -105,6 +105,7 @@ def main():
         f"\n{cols_to_remove}"
     )
     orig_md = orig_md.drop(columns=cols_to_remove)
+    orig_md = orig_md.rename(columns={"country": "country_of_birth"})
 
     new_md_file = "data/intermediate/metadata.disambig.tsv"
     new_md = pd.read_table(new_md_file, sep="\t", index_col=0,
@@ -182,15 +183,6 @@ def main():
         new_md["bowel_movement_quality"].replace(bowel_movement_quality_map)
     )
     logger.info("Replacing bowel_movement_quality values")
-
-    country_map = {
-        "USA": "USA",
-        "United Kingdom": "United Kingdom",
-        "Australia": "Australia",
-        "Canada": "Canada"
-    }
-    new_md["country"] = new_md["country"].map(country_map)
-    logger.info(f"Subsetting countries to only include:\n{list(country_map.keys())}")
 
     replacement_dict = get_replacements_dict()
     for col in new_md.columns:

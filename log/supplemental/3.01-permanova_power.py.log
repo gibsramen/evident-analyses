@@ -1,0 +1,19 @@
+[2023-01-17 11:26:08,980 - INFO] :: Loading distance matrix...
+[2023-01-17 11:26:38,741 - INFO] :: Finished loading distance matrix!
+/home/grahman/projects/evident/evident/utils.py:24: UserWarning: Data and metadata do not have the same sample IDs. Using 9495 samples common to both.
+  warn(msg)
+/home/grahman/projects/evident/evident/data_handler.py:84: UserWarning: Some categories have been dropped because they had either only one level or too many. Use the max_levels_per_category argument to modify this threshold.
+Dropped columns: ['level_of_education', 'processing_robot', 'extraction_robot', 'contraceptive', 'center_project_name', 'drinks_per_session']
+  "Some categories have been dropped because they had either "
+[2023-01-17 12:36:15,175 - INFO] :: 
+   alpha  total_observations     power  effect_size    metric       column
+0   0.01                  50  0.031010     0.003139  omega_sq  last_travel
+1   0.01                 100  0.066689     0.003139  omega_sq  last_travel
+2   0.01                 150  0.118039     0.003139  omega_sq  last_travel
+3   0.01                 200  0.172391     0.003139  omega_sq  last_travel
+4   0.01                 250  0.267422     0.003139  omega_sq  last_travel
+[Parallel(n_jobs=3)]: Using backend MultiprocessingBackend with 3 concurrent workers.
+[Parallel(n_jobs=3)]: Done   1 tasks      | elapsed: 67.5min
+[Parallel(n_jobs=3)]: Done   3 out of   3 | elapsed: 69.6min remaining:    0.0s
+[Parallel(n_jobs=3)]: Done   3 out of   3 | elapsed: 69.6min finished
+Total script time: 4206.502166032791

@@ -1,0 +1,10 @@
+[2023-01-12 10:58:47,608 - INFO] :: 
+   alpha  total_observations     power  ...    metric column difference
+0   0.05                 100  0.096208  ...  cohens_d  obese        0.5
+1   0.05                 200  0.144946  ...  cohens_d  obese        0.5
+2   0.05                 300  0.194461  ...  cohens_d  obese        0.5
+3   0.05                 400  0.244043  ...  cohens_d  obese        0.5
+4   0.05                 500  0.293103  ...  cohens_d  obese        0.5
+
+[5 rows x 7 columns]
+Total script time: 0.052614688873291016

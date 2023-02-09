@@ -1,11 +1,11 @@
-[2022-04-20 21:10:46,052 - INFO] :: Ambiguous prep metadata shape: (9869, 42)
-[2022-04-20 21:10:46,812 - INFO] :: Ambiguous table shape: (274324, 9869)
-[2022-04-20 21:10:49,180 - INFO] :: Number of samples to keep: 9511
-/home/grahman/projects/evident-analyses/src/helper.py:20: DtypeWarning: Columns (28,65,73,80,101,110,123,124,127,140,142,177,229,239,263,268,275,295,327,386,408,414) have mixed types.Specify dtype option on import or set low_memory=False.
+[2023-01-11 10:00:10,025 - INFO] :: Ambiguous prep metadata shape: (9867, 43)
+[2023-01-11 10:00:11,010 - INFO] :: Ambiguous table shape: (274323, 9867)
+[2023-01-11 10:00:13,352 - INFO] :: Number of samples to keep: 9511
+/home/grahman/projects/evident-analyses/src/helper.py:20: DtypeWarning: Columns (4,6,14,17,27,30,35,43,45,51,53,56,60,61,66,78,82,83,89,104,108,112,114,115,117,118,129,131,132,143,144,154,157,167,169,174,178,184,186,207,210,218,228,230,232,242,262,267,282,284,288,293,310,312,313,323,326,335,342,343,354,357,365,372,379,386,394,398,411,418,421,422,423,430,436,458,465,467,470,474,476,484,490,501,505,506,510,518,533,534,541,542,544,557,558,566,569,579,582,586,587) have mixed types.Specify dtype option on import or set low_memory=False.
   func()
-[2022-04-20 21:10:49,737 - INFO] :: Ambiguous sample metadata shape: (9869, 451)
-[2022-04-20 21:10:51,494 - INFO] :: Disambiguated metadata shape: (9511, 494)
-[2022-04-20 21:10:52,053 - INFO] :: Disambiguated table shape: (274308, 9511)
-[2022-04-20 21:10:53,456 - INFO] :: Saved disambiguated table to data/intermediate/table.disambig.biom!
-[2022-04-20 21:10:55,234 - INFO] :: Saved disambiguated metadata to data/intermediate/metadata.disambig.tsv!
-Total script time: 9.32368016242981
+[2023-01-11 10:00:13,928 - INFO] :: Ambiguous sample metadata shape: (9867, 588)
+[2023-01-11 10:00:18,819 - INFO] :: Disambiguated metadata shape: (9511, 632)
+[2023-01-11 10:00:20,093 - INFO] :: Disambiguated table shape: (274308, 9511)
+[2023-01-11 10:00:21,510 - INFO] :: Saved disambiguated table to data/intermediate/table.disambig.biom!
+[2023-01-11 10:00:24,127 - INFO] :: Saved disambiguated metadata to data/intermediate/metadata.disambig.tsv!
+Total script time: 14.379511594772339

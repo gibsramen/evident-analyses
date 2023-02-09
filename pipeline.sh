@@ -3,7 +3,7 @@
 cd /home/grahman/projects/evident-analyses
 
 # Download raw data
-jid1=$(sbatch scripts/0.01-download_data.sh | grep -oP "\d*")
+# jid1=$(sbatch scripts/0.01-download_data.sh | grep -oP "\d*")
 
 # Disambguate raw data
 jid2=$(sbatch --dependency=afterok:$jid1 scripts/1.01-disambiguate.py | grep -oP "\d*")

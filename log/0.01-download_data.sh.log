@@ -1,21 +1,21 @@
-Wed Apr 20 20:58:07 PDT 2022
+Wed Jan 11 09:52:44 PST 2023
 /home/grahman/projects/evident-analyses
 b2-001
-[ Wed Apr 20 20:58:07 PDT 2022 ] :: Start script
-[ Wed Apr 20 20:58:51 PDT 2022 ] :: Start redbiom fetch samples
-9869 sample ambiguities observed. Writing ambiguity mappings to: data/raw/table.raw.ambig.biom.ambiguities
-[ Wed Apr 20 21:00:17 PDT 2022 ] :: Start redbiom fetch sample prep metadata
-9869 sample ambiguities observed. Writing ambiguity mappings to: data/raw/metadata.raw.prep.ambig.tsv.ambiguities
-[ Wed Apr 20 21:00:39 PDT 2022 ] :: Start redbiom fetch sample metadata
-9869 sample ambiguities observed. Writing ambiguity mappings to: data/raw/metadata.raw.ambig.tsv.ambiguities
-[ Wed Apr 20 21:03:29 PDT 2022 ] :: Finished script!
-Num samples: 9,869
-Num observations: 274,324
-Total count: 209,127,678
+[ Wed Jan 11 09:52:44 PST 2023 ] :: Start script
+[ Wed Jan 11 09:53:45 PST 2023 ] :: Start redbiom fetch samples
+9867 sample ambiguities observed. Writing ambiguity mappings to: data/raw/table.raw.ambig.biom.ambiguities
+[ Wed Jan 11 09:55:36 PST 2023 ] :: Start redbiom fetch sample prep metadata
+9867 sample ambiguities observed. Writing ambiguity mappings to: data/raw/metadata.raw.prep.ambig.tsv.ambiguities
+[ Wed Jan 11 09:56:00 PST 2023 ] :: Start redbiom fetch sample metadata
+9867 sample ambiguities observed. Writing ambiguity mappings to: data/raw/metadata.raw.ambig.tsv.ambiguities
+[ Wed Jan 11 10:00:01 PST 2023 ] :: Finished script!
+Num samples: 9,867
+Num observations: 274,323
+Total count: 209,080,192
 Table density (fraction of non-zero values): 0.001
 
 Counts/sample summary:
  Min: 1,499.000
  Max: 425,800.000
- Median: 16,539.000
- Mean: 21,190.362
+ Median: 16,538.000
+ Mean: 21,189.844

@@ -1,0 +1,218 @@
+[2023-01-18 13:33:10,031 - INFO] :: Loading distance matrix...
+[2023-01-18 13:33:39,000 - INFO] :: Finished loading distance matrix!
+[2023-01-18 13:33:39,006 - INFO] :: Country: United Kingdom
+/home/grahman/projects/evident/evident/utils.py:24: UserWarning: Data and metadata do not have the same sample IDs. Using 1832 samples common to both.
+  warn(msg)
+/home/grahman/projects/evident/evident/data_handler.py:84: UserWarning: Some categories have been dropped because they had either only one level or too many. Use the max_levels_per_category argument to modify this threshold.
+Dropped columns: ['processing_robot', 'drinks_per_session', 'extraction_robot', 'country_of_birth', 'level_of_education', 'contraceptive', 'center_project_name']
+  "Some categories have been dropped because they had either "
+/home/grahman/projects/evident/evident/data_handler.py:91: UserWarning: Some categorical levels have been dropped because they did not have enough samples. Use the min_count_per_level argument to modify this threshold.
+Dropped levels: {'race': ['Hispanic']}
+  "Some categorical levels have been dropped because they "
+[2023-01-18 13:33:39,166 - INFO] :: Calculating effect sizes...
+[2023-01-18 13:33:44,654 - INFO] :: 
+    effect_size    metric                                             column
+0      0.340567  cohens_d  mental_illness_type_ptsd_posttraumatic_stress_...
+1      0.247803  cohens_d  specialized_diet_other_restrictions_not_descri...
+2      0.244846  cohens_d                                           add_adhd
+3      0.231975  cohens_d                                         nail_biter
+4      0.202033  cohens_d                                             cancer
+..          ...       ...                                                ...
+77     0.008900  cohens_f                                      weight_change
+78     0.008274  cohens_f                                      dominant_hand
+79     0.006828  cohens_f                                           csection
+80     0.006108  cohens_f                                          last_move
+81     0.002871  cohens_f                                               race
+
+[82 rows x 3 columns]
+[2023-01-18 13:33:44,658 - INFO] :: Finished calculating effect sizes!
+[2023-01-18 13:33:44,658 - INFO] :: Country: United States
+/home/grahman/projects/evident/evident/utils.py:24: UserWarning: Data and metadata do not have the same sample IDs. Using 5801 samples common to both.
+  warn(msg)
+/home/grahman/projects/evident/evident/data_handler.py:84: UserWarning: Some categories have been dropped because they had either only one level or too many. Use the max_levels_per_category argument to modify this threshold.
+Dropped columns: ['processing_robot', 'drinks_per_session', 'extraction_robot', 'country_of_birth', 'level_of_education', 'contraceptive', 'center_project_name']
+  "Some categories have been dropped because they had either "
+[2023-01-18 13:33:45,599 - INFO] :: Calculating effect sizes...
+[Parallel(n_jobs=8)]: Using backend MultiprocessingBackend with 8 concurrent workers.
+[Parallel(n_jobs=8)]: Done   1 tasks      | elapsed:    0.4s
+[Parallel(n_jobs=8)]: Done   2 tasks      | elapsed:    0.6s
+[Parallel(n_jobs=8)]: Done   3 tasks      | elapsed:    0.7s
+[Parallel(n_jobs=8)]: Done   4 tasks      | elapsed:    0.7s
+[Parallel(n_jobs=8)]: Done   5 tasks      | elapsed:    0.8s
+[Parallel(n_jobs=8)]: Done   6 tasks      | elapsed:    0.9s
+[Parallel(n_jobs=8)]: Done   7 tasks      | elapsed:    1.0s
+[Parallel(n_jobs=8)]: Done   8 tasks      | elapsed:    1.0s
+[Parallel(n_jobs=8)]: Done   9 tasks      | elapsed:    1.0s
+[Parallel(n_jobs=8)]: Done  10 tasks      | elapsed:    1.1s
+[Parallel(n_jobs=8)]: Done  11 tasks      | elapsed:    1.1s
+[Parallel(n_jobs=8)]: Done  12 tasks      | elapsed:    1.1s
+[Parallel(n_jobs=8)]: Done  13 tasks      | elapsed:    1.2s
+[Parallel(n_jobs=8)]: Done  14 tasks      | elapsed:    1.4s
+[Parallel(n_jobs=8)]: Done  15 tasks      | elapsed:    1.4s
+[Parallel(n_jobs=8)]: Done  16 tasks      | elapsed:    1.4s
+[Parallel(n_jobs=8)]: Done  17 tasks      | elapsed:    1.5s
+[Parallel(n_jobs=8)]: Done  18 tasks      | elapsed:    1.6s
+[Parallel(n_jobs=8)]: Done  19 tasks      | elapsed:    1.6s
+[Parallel(n_jobs=8)]: Done  20 tasks      | elapsed:    1.7s
+[Parallel(n_jobs=8)]: Done  21 tasks      | elapsed:    1.7s
+[Parallel(n_jobs=8)]: Done  22 tasks      | elapsed:    1.8s
+[Parallel(n_jobs=8)]: Done  23 tasks      | elapsed:    1.8s
+[Parallel(n_jobs=8)]: Done  24 tasks      | elapsed:    1.8s
+[Parallel(n_jobs=8)]: Done  25 tasks      | elapsed:    1.9s
+[Parallel(n_jobs=8)]: Done  26 tasks      | elapsed:    2.0s
+[Parallel(n_jobs=8)]: Done  27 tasks      | elapsed:    2.0s
+[Parallel(n_jobs=8)]: Done  28 tasks      | elapsed:    2.1s
+[Parallel(n_jobs=8)]: Done  29 tasks      | elapsed:    2.2s
+[Parallel(n_jobs=8)]: Done  30 tasks      | elapsed:    2.2s
+[Parallel(n_jobs=8)]: Done  31 tasks      | elapsed:    2.3s
+[Parallel(n_jobs=8)]: Done  32 tasks      | elapsed:    2.4s
+[Parallel(n_jobs=8)]: Done  33 tasks      | elapsed:    2.4s
+[Parallel(n_jobs=8)]: Done  34 tasks      | elapsed:    2.5s
+[Parallel(n_jobs=8)]: Done  35 tasks      | elapsed:    2.6s
+[Parallel(n_jobs=8)]: Done  36 tasks      | elapsed:    2.6s
+[Parallel(n_jobs=8)]: Done  37 tasks      | elapsed:    2.7s
+[Parallel(n_jobs=8)]: Done  38 tasks      | elapsed:    2.7s
+[Parallel(n_jobs=8)]: Done  39 tasks      | elapsed:    2.7s
+[Parallel(n_jobs=8)]: Done  40 tasks      | elapsed:    2.8s
+[Parallel(n_jobs=8)]: Done  41 tasks      | elapsed:    2.8s
+[Parallel(n_jobs=8)]: Done  42 tasks      | elapsed:    2.8s
+[Parallel(n_jobs=8)]: Done  43 tasks      | elapsed:    2.8s
+[Parallel(n_jobs=8)]: Done  44 tasks      | elapsed:    2.8s
+[Parallel(n_jobs=8)]: Done  45 tasks      | elapsed:    2.9s
+[Parallel(n_jobs=8)]: Done  46 tasks      | elapsed:    3.0s
+[Parallel(n_jobs=8)]: Done  47 tasks      | elapsed:    3.1s
+[Parallel(n_jobs=8)]: Done  48 tasks      | elapsed:    3.1s
+[Parallel(n_jobs=8)]: Done  49 tasks      | elapsed:    3.1s
+[Parallel(n_jobs=8)]: Done  50 tasks      | elapsed:    3.2s
+[Parallel(n_jobs=8)]: Done  51 tasks      | elapsed:    3.3s
+[Parallel(n_jobs=8)]: Done  52 tasks      | elapsed:    3.3s
+[Parallel(n_jobs=8)]: Done  53 tasks      | elapsed:    3.4s
+[Parallel(n_jobs=8)]: Done  54 tasks      | elapsed:    3.5s
+[Parallel(n_jobs=8)]: Done  55 tasks      | elapsed:    3.5s
+[Parallel(n_jobs=8)]: Done  56 tasks      | elapsed:    3.6s
+[Parallel(n_jobs=8)]: Done  57 tasks      | elapsed:    3.6s
+[Parallel(n_jobs=8)]: Done  58 tasks      | elapsed:    3.7s
+[Parallel(n_jobs=8)]: Done  59 tasks      | elapsed:    3.7s
+[Parallel(n_jobs=8)]: Done  60 tasks      | elapsed:    3.8s
+[Parallel(n_jobs=8)]: Done  61 tasks      | elapsed:    3.8s
+[Parallel(n_jobs=8)]: Done  62 tasks      | elapsed:    3.9s
+[Parallel(n_jobs=8)]: Done  63 tasks      | elapsed:    4.0s
+[Parallel(n_jobs=8)]: Done  64 tasks      | elapsed:    4.0s
+[Parallel(n_jobs=8)]: Done  65 tasks      | elapsed:    4.0s
+[Parallel(n_jobs=8)]: Done  66 tasks      | elapsed:    4.0s
+[Parallel(n_jobs=8)]: Done  67 tasks      | elapsed:    4.1s
+[Parallel(n_jobs=8)]: Done  68 out of  82 | elapsed:    4.1s remaining:    0.9s
+[Parallel(n_jobs=8)]: Done  69 out of  82 | elapsed:    4.2s remaining:    0.8s
+[Parallel(n_jobs=8)]: Done  70 out of  82 | elapsed:    4.3s remaining:    0.7s
+[Parallel(n_jobs=8)]: Done  71 out of  82 | elapsed:    4.4s remaining:    0.7s
+[Parallel(n_jobs=8)]: Done  72 out of  82 | elapsed:    4.4s remaining:    0.6s
+[Parallel(n_jobs=8)]: Done  73 out of  82 | elapsed:    4.5s remaining:    0.6s
+[Parallel(n_jobs=8)]: Done  74 out of  82 | elapsed:    4.5s remaining:    0.5s
+[Parallel(n_jobs=8)]: Done  75 out of  82 | elapsed:    4.6s remaining:    0.4s
+[Parallel(n_jobs=8)]: Done  76 out of  82 | elapsed:    4.7s remaining:    0.4s
+[Parallel(n_jobs=8)]: Done  77 out of  82 | elapsed:    4.7s remaining:    0.3s
+[Parallel(n_jobs=8)]: Done  78 out of  82 | elapsed:    4.8s remaining:    0.2s
+[Parallel(n_jobs=8)]: Done  79 out of  82 | elapsed:    4.9s remaining:    0.2s
+[Parallel(n_jobs=8)]: Done  80 out of  82 | elapsed:    4.9s remaining:    0.1s
+[Parallel(n_jobs=8)]: Done  82 out of  82 | elapsed:    5.2s remaining:    0.0s
+[Parallel(n_jobs=8)]: Done  82 out of  82 | elapsed:    5.2s finished
+[2023-01-18 13:34:28,835 - INFO] :: 
+    effect_size    metric                   column
+0      0.372997  cohens_d        fungal_overgrowth
+1      0.259406  cohens_d       clinical_condition
+2      0.247580  cohens_d               autoimmune
+3      0.212517  cohens_d   non_food_allergies_sun
+4      0.200686  cohens_d   cardiovascular_disease
+..          ...       ...                      ...
+77     0.009357  cohens_f            dominant_hand
+78     0.008254  cohens_f            weight_change
+79     0.007955  cohens_f                diet_type
+80     0.005245  cohens_f  teethbrushing_frequency
+81     0.003065  cohens_f        smoking_frequency
+
+[82 rows x 3 columns]
+[2023-01-18 13:34:28,838 - INFO] :: Finished calculating effect sizes!
+[Parallel(n_jobs=8)]: Using backend MultiprocessingBackend with 8 concurrent workers.
+[Parallel(n_jobs=8)]: Done   1 tasks      | elapsed:    1.2s
+[Parallel(n_jobs=8)]: Done   2 tasks      | elapsed:    3.5s
+[Parallel(n_jobs=8)]: Done   3 tasks      | elapsed:    4.1s
+[Parallel(n_jobs=8)]: Done   4 tasks      | elapsed:    4.5s
+[Parallel(n_jobs=8)]: Done   5 tasks      | elapsed:    5.1s
+[Parallel(n_jobs=8)]: Done   6 tasks      | elapsed:    5.9s
+[Parallel(n_jobs=8)]: Done   7 tasks      | elapsed:    6.2s
+[Parallel(n_jobs=8)]: Done   8 tasks      | elapsed:    6.7s
+[Parallel(n_jobs=8)]: Done   9 tasks      | elapsed:    7.1s
+[Parallel(n_jobs=8)]: Done  10 tasks      | elapsed:    7.6s
+[Parallel(n_jobs=8)]: Done  11 tasks      | elapsed:    8.0s
+[Parallel(n_jobs=8)]: Done  12 tasks      | elapsed:    9.2s
+[Parallel(n_jobs=8)]: Done  13 tasks      | elapsed:   10.3s
+[Parallel(n_jobs=8)]: Done  14 tasks      | elapsed:   11.1s
+[Parallel(n_jobs=8)]: Done  15 tasks      | elapsed:   11.1s
+[Parallel(n_jobs=8)]: Done  16 tasks      | elapsed:   12.5s
+[Parallel(n_jobs=8)]: Done  17 tasks      | elapsed:   12.7s
+[Parallel(n_jobs=8)]: Done  18 tasks      | elapsed:   13.2s
+[Parallel(n_jobs=8)]: Done  19 tasks      | elapsed:   13.3s
+[Parallel(n_jobs=8)]: Done  20 tasks      | elapsed:   13.4s
+[Parallel(n_jobs=8)]: Done  21 tasks      | elapsed:   13.5s
+[Parallel(n_jobs=8)]: Done  22 tasks      | elapsed:   13.8s
+[Parallel(n_jobs=8)]: Done  23 tasks      | elapsed:   14.7s
+[Parallel(n_jobs=8)]: Done  24 tasks      | elapsed:   15.0s
+[Parallel(n_jobs=8)]: Done  25 tasks      | elapsed:   15.2s
+[Parallel(n_jobs=8)]: Done  26 tasks      | elapsed:   15.8s
+[Parallel(n_jobs=8)]: Done  27 tasks      | elapsed:   16.5s
+[Parallel(n_jobs=8)]: Done  28 tasks      | elapsed:   16.9s
+[Parallel(n_jobs=8)]: Done  29 tasks      | elapsed:   18.9s
+[Parallel(n_jobs=8)]: Done  30 tasks      | elapsed:   18.9s
+[Parallel(n_jobs=8)]: Done  31 tasks      | elapsed:   18.9s
+[Parallel(n_jobs=8)]: Done  32 tasks      | elapsed:   19.1s
+[Parallel(n_jobs=8)]: Done  33 tasks      | elapsed:   19.3s
+[Parallel(n_jobs=8)]: Done  34 tasks      | elapsed:   20.1s
+[Parallel(n_jobs=8)]: Done  35 tasks      | elapsed:   20.3s
+[Parallel(n_jobs=8)]: Done  36 tasks      | elapsed:   20.3s
+[Parallel(n_jobs=8)]: Done  37 tasks      | elapsed:   20.9s
+[Parallel(n_jobs=8)]: Done  38 tasks      | elapsed:   21.2s
+[Parallel(n_jobs=8)]: Done  39 tasks      | elapsed:   21.3s
+[Parallel(n_jobs=8)]: Done  40 tasks      | elapsed:   21.3s
+[Parallel(n_jobs=8)]: Done  41 tasks      | elapsed:   21.4s
+[Parallel(n_jobs=8)]: Done  42 tasks      | elapsed:   21.9s
+[Parallel(n_jobs=8)]: Done  43 tasks      | elapsed:   22.0s
+[Parallel(n_jobs=8)]: Done  44 tasks      | elapsed:   22.5s
+[Parallel(n_jobs=8)]: Done  45 tasks      | elapsed:   23.2s
+[Parallel(n_jobs=8)]: Done  46 tasks      | elapsed:   23.6s
+[Parallel(n_jobs=8)]: Done  47 tasks      | elapsed:   24.2s
+[Parallel(n_jobs=8)]: Done  48 tasks      | elapsed:   24.7s
+[Parallel(n_jobs=8)]: Done  49 tasks      | elapsed:   25.3s
+[Parallel(n_jobs=8)]: Done  50 tasks      | elapsed:   25.9s
+[Parallel(n_jobs=8)]: Done  51 tasks      | elapsed:   27.9s
+[Parallel(n_jobs=8)]: Done  52 tasks      | elapsed:   28.8s
+[Parallel(n_jobs=8)]: Done  53 tasks      | elapsed:   29.6s
+[Parallel(n_jobs=8)]: Done  54 tasks      | elapsed:   30.1s
+[Parallel(n_jobs=8)]: Done  55 tasks      | elapsed:   30.1s
+[Parallel(n_jobs=8)]: Done  56 tasks      | elapsed:   30.5s
+[Parallel(n_jobs=8)]: Done  57 tasks      | elapsed:   30.7s
+[Parallel(n_jobs=8)]: Done  58 tasks      | elapsed:   30.8s
+[Parallel(n_jobs=8)]: Done  59 tasks      | elapsed:   31.1s
+[Parallel(n_jobs=8)]: Done  60 tasks      | elapsed:   31.4s
+[Parallel(n_jobs=8)]: Done  61 tasks      | elapsed:   31.4s
+[Parallel(n_jobs=8)]: Done  62 tasks      | elapsed:   31.9s
+[Parallel(n_jobs=8)]: Done  63 tasks      | elapsed:   32.2s
+[Parallel(n_jobs=8)]: Done  64 tasks      | elapsed:   32.6s
+[Parallel(n_jobs=8)]: Done  65 tasks      | elapsed:   33.1s
+[Parallel(n_jobs=8)]: Done  66 tasks      | elapsed:   33.2s
+[Parallel(n_jobs=8)]: Done  67 tasks      | elapsed:   34.9s
+[Parallel(n_jobs=8)]: Done  68 out of  82 | elapsed:   35.2s remaining:    7.3s
+[Parallel(n_jobs=8)]: Done  69 out of  82 | elapsed:   35.4s remaining:    6.7s
+[Parallel(n_jobs=8)]: Done  70 out of  82 | elapsed:   35.9s remaining:    6.1s
+[Parallel(n_jobs=8)]: Done  71 out of  82 | elapsed:   36.0s remaining:    5.6s
+[Parallel(n_jobs=8)]: Done  72 out of  82 | elapsed:   36.7s remaining:    5.1s
+[Parallel(n_jobs=8)]: Done  73 out of  82 | elapsed:   36.9s remaining:    4.5s
+[Parallel(n_jobs=8)]: Done  74 out of  82 | elapsed:   36.9s remaining:    4.0s
+[Parallel(n_jobs=8)]: Done  75 out of  82 | elapsed:   37.2s remaining:    3.5s
+[Parallel(n_jobs=8)]: Done  76 out of  82 | elapsed:   37.4s remaining:    2.9s
+[Parallel(n_jobs=8)]: Done  77 out of  82 | elapsed:   39.2s remaining:    2.5s
+[Parallel(n_jobs=8)]: Done  78 out of  82 | elapsed:   39.6s remaining:    2.0s
+[Parallel(n_jobs=8)]: Done  79 out of  82 | elapsed:   39.6s remaining:    1.5s
+[Parallel(n_jobs=8)]: Done  80 out of  82 | elapsed:   40.0s remaining:    1.0s
+[Parallel(n_jobs=8)]: Done  82 out of  82 | elapsed:   42.8s remaining:    0.0s
+[Parallel(n_jobs=8)]: Done  82 out of  82 | elapsed:   42.8s finished
+Total script time: 78.96373891830444
