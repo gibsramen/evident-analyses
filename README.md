@@ -1,3 +1,3 @@
-# evident analyses
+# Evident analyses
 
-Scripts and code used to recreate figures in evident manuscript. Analyses were performed with evident version 0.2.0.
+Scripts and code used to recreate figures in Evident manuscript. Analyses were performed with Evident version 0.4.0.
